@@ -21,7 +21,6 @@ $age = array("Maxamed"=>"20", "Cali"=>"35", "Ismaaciil"=>"15");
 echo $age['Ismaaciil'];
 
 //Multidimentional arrays
-
 $customersInfo = array(
 
     array("Maxamed", 20, "bixiyay"),
@@ -29,9 +28,33 @@ $customersInfo = array(
 
 );
 
-echo "Macmiilka magaciisu yahay: ".$customersInfo[1][0]." lacagta waa uu: ".$customersInfo[1][2];
+echo "Macmiilka magaciisu yahay:".$customersInfo[1][0]."lacagta waa uu: ".$customersInfo[1][2];
+
+$array = array(
+    "foo" => "bar",
+    42    => 24,
+    "multi" => array(
+         "dim" => array(
+             "a" => "foo"
+         )
+    )
+);
+
+# => string(3) "bar"
+var_dump($array["foo"]);
+
+# => int(24)
+var_dump($array[42]);
+
+# =>  string(3) "foo"
+var_dump($array["multi"]["dim"]["a"]);
 
 
+$array = array('a', 'b', 'c');
+$count = count($array);
 
+for ($i = 0; $i < $count; $i++) {
+    echo "i:{$i}, v:{$array[$i]}\n";
+}
 
 ?>
