@@ -1,17 +1,24 @@
 <?php
 
+$num = [1, 3, 5, 7, 9];
+$num[5] = 11;
+unset($num[2]);    // Delete variable
+print_r($num);     # => 1 3 7 9 11
+echo count($num);  # => 5
+
+
 //indexed arrays
 
 $cars = array("Toyota", "BMW", "Tesla");
 
-//echo $cars[2];
+echo $cars[2];
 
 
 //Associative arrays
 
 $age = array("Maxamed"=>"20", "Cali"=>"35", "Ismaaciil"=>"15");
 
-//echo $age['Ismaaciil'];
+echo $age['Ismaaciil'];
 
 //Multidimentional arrays
 
