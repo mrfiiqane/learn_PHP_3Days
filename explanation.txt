@@ -1,0 +1,13 @@
+
+Here are the rules for creating new PHP functions:
+
+Function names must start with a letter or an underscore.
+Function names cannot contain spaces.
+Function names are not case-sensitive.
+Function names cannot be the same as reserved keywords.
+Function names should be descriptive and reflect what the function does.
+Function arguments are optional, but if you do define arguments, they must be declared in the function definition. Arguments can be passed to functions by value or by reference.
+
+Function bodies can contain any valid PHP code, including other functions. Functions can also return values.
+
+Here is an example of a valid PHP function:
